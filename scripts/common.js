@@ -5,6 +5,7 @@ var signInModal = document.getElementById("signInModal");
 // Get the button that opens the modal
 var signUpBtn = document.getElementById("signUpBtn");
 var signInBtn = document.getElementById("signInBtn");
+var signUpLink = document.getElementById("signUpLink");
 
 // Get the <span> element that closes the modal
 var closeSignUp = document.getElementById("closeSignUp");
@@ -35,4 +36,9 @@ openModal = modal => {
 // Close the modal Generic function
 closeModal = modal => {
   modal.style.display = "none";
+};
+// On clicking sign up hyperlink inside sign in modal
+signUpLink.onclick = function() {
+  closeModal(signInModal);
+  openModal(signUpModal);
 };

@@ -41,9 +41,20 @@
   padding: 20px;
   border: 1px solid #888;
   width: 35%; /* Could be more or less, depending on screen size */
+  border-radius: 0;
 }
 .modal-content .modal-heading {
   margin: 0;
+}
+.not-member {
+  text-align: center;
+  margin: 10px;
+  font-weight: bold;
+  font-size: 12px;
+}
+.not-member span {
+  color: blue;
+  cursor: pointer;
 }
 
 /* The Close Button */

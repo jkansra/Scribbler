@@ -1,11 +1,25 @@
-body{
-    background-image: url("../images/background.jpg");
-    background-size: cover;
-    padding: 10px;
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
-.posts-btn-wrapper{
-    min-height: 450px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body {
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  padding: 10px;
+}
+.posts-btn-wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.posts-btn-wrapper .outer-btns {
+  background-color: yellow;
+  padding: 5px 15px;
+  margin: 5px;
+  border: none;
 }
