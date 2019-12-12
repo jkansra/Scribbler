@@ -2,6 +2,10 @@
 <html>
   <head>
     <!-- TODO: Include Font Awesome file here -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!-- TODO: Include Google Fonts file here -->
     <link
       href="https://fonts.googleapis.com/css?family=Montez&display=swap"
@@ -15,8 +19,8 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles/common.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
   </head>
 
   <body>
@@ -36,7 +40,9 @@
         <!-- Modal content -->
         <div class="modal-content">
           <div class="modal-header">
-            <span class="close" id="closeSignUp">&times;</span>
+            <span class="close-icon" id="closeSignUp"
+              ><i class="fa fa-times fa-lg" aria-hidden="true"></i
+            ></span>
             <h2 class="modal-heading">Get Started</h2>
           </div>
           <div class="modal-body">
@@ -94,7 +100,9 @@
         <!-- Modal content -->
         <div class="modal-content">
           <div class="modal-header">
-            <span class="close" id="closeSignIn">&times;</span>
+            <span class="close-icon" id="closeSignIn"
+              ><i class="fa fa-times fa-lg" aria-hidden="true"></i
+            ></span>
             <h2 class="modal-heading">Welcome Back!</h2>
           </div>
           <div class="modal-body">
@@ -131,7 +139,10 @@
       </div>
     </header>
     <section class="posts-btn-wrapper">
-      <button onclick="location.href='./html/bloglist.html'" class="outer-btns">
+      <button
+        onclick="location.href='./html/postslist.html'"
+        class="outer-btns"
+      >
         All Posts
       </button>
       <button id="createPostBtn" class="outer-btns">Create Posts</button>
@@ -140,7 +151,9 @@
         <!-- Modal content -->
         <div class="modal-content">
           <div class="modal-header">
-            <span class="close" id="closeCreatePost">&times;</span>
+            <span id="closeCreatePost" class="close-icon">
+              <i class="fa fa-times fa-lg" aria-hidden="true"></i>
+            </span>
             <h2 class="modal-heading">Pen Your Post</h2>
           </div>
           <div class="modal-body">
@@ -152,22 +165,26 @@
                   class="form-control"
                   id="title"
                   placeholder="Enter title of your post"
-                  required="true"
                 />
               </div>
               <div class="form-group">
                 <label for="contents">Contents</label>
-                <input
+                <textarea
                   type="text"
-                  class="form-control"
+                  class="form-control contents"
                   id="contents"
                   placeholder="Enter the contents of your post"
-                  required="true"
-                />
+                ></textarea>
               </div>
-              <button type="submit" class="btn btn-success" id="createPostApi">
-                Create
-              </button>
+              <div class="create-btn-div">
+                <button
+                  type="submit"
+                  class="btn btn-success"
+                  id="createPostApi"
+                >
+                  Create
+                </button>
+              </div>
             </form>
           </div>
         </div>

@@ -8,10 +8,3 @@ var closeCreatePost = document.getElementById("closeCreatePost");
 
 createPostBtn.addEventListener("click", () => openModal(createPostModal));
 closeCreatePost.addEventListener("click", () => closeModal(createPostModal));
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == createPostModal) {
-    createPostModal.style.display = "none";
-  }
-};

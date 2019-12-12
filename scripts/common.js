@@ -28,6 +28,9 @@ window.onclick = function(event) {
   if (event.target == signInModal) {
     signInModal.style.display = "none";
   }
+  if (event.target == createPostModal) {
+    createPostModal.style.display = "none";
+  }
 };
 // Open the modal Generic function
 openModal = modal => {

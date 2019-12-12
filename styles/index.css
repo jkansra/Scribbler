@@ -23,3 +23,18 @@ body {
   margin: 5px;
   border: none;
 }
+
+#createPostModal .modal-content {
+  width: 85%;
+  margin: 3% auto;
+}
+#createPostModal .modal-content .contents {
+  min-height: 300px;
+}
+#createPostModal .modal-content .create-btn-div {
+  text-align: center;
+}
+#createPostModal .modal-content .create-btn-div .btn {
+  padding: 5px 25px;
+  border-radius: 0;
+}
