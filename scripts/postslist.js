@@ -24,6 +24,7 @@ deletePost = () => {
   closeModal(deletePostModal);
 };
 
+// Updating Session storage before redirecting to post.html page to view the clicked post
 navigateToPost = postThread => {
   var post = postThread.closest(".post");
   var author = post.querySelector(".username p").textContent.trim();

@@ -143,13 +143,32 @@
       <p class="post-title" id="postTitle">abcd</p>
       <div class="author-edit-wrapper">
         <span id="author">Author</span>
-        <button class="btn btn-danger" id="editPost">
+        <button class="btn btn-danger saved btn-common" id="editPost">
           Edit <i class="fa fa-edit"></i>
         </button>
       </div>
       <p class="post-content" id="postContent">
         content daskd jasd kjoqwpdj asj dspa
       </p>
+      <div class="like-wrapper">
+        <button class="btn btn-danger like-button btn-common">
+          <i class="fa fa-thumbs-up"></i>
+          Like
+        </button>
+        <p id="likeText">Be the first one to like this!</p>
+      </div>
+      <div class="comments-wrapper">
+        <textarea
+          name="comments"
+          id="commentBox"
+          placeholder="Leave a comment..."
+        ></textarea>
+        <button class="btn btn-danger comment-button btn-common">
+          Comment
+        </button>
+        <p class="all-comments-text">All Comments</p>
+        <div id="commentsWrapper"></div>
+      </div>
     </div>
   </section>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
