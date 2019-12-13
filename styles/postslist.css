@@ -5,14 +5,17 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding: 0 5%;
+  padding: 20px 5%;
 }
 .post {
   width: 45%;
-  margin: 0 auto;
+  margin: 15px auto;
   display: flex;
   border-radius: 20px;
-  padding: 10px;
+  box-shadow: 0 0 5px 2px #ccc;
+}
+.post:hover {
+  box-shadow: 0 0 20px 10px #ccc;
 }
 .post .username {
   background-color: white;
@@ -36,6 +39,7 @@ body {
   color: #838383;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 10px;
 }
 .post .content-wrapper .title p {
   margin: 0 10px 0 0;
@@ -50,4 +54,17 @@ body {
   color: #838383;
   float: right;
   cursor: pointer;
+}
+#deletePostModal .modal-content {
+  width: 24%;
+  margin: 15% auto;
+}
+#deletePostModal .button-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+#deletePostModal .button-wrapper button {
+  padding: 5px 20px;
+  border-radius: 0;
 }

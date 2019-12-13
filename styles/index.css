@@ -1,13 +1,6 @@
-html,
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
 body {
   background-image: url("../images/background.jpg");
   background-size: cover;
-  padding: 10px;
 }
 .posts-btn-wrapper {
   height: 100%;

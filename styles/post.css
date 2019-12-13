@@ -1,0 +1,21 @@
+.post-wrapper {
+  width: 90%;
+  margin: 10px auto;
+}
+.post-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+#author {
+  font-size: 18px;
+}
+.editable {
+  outline: 1px solid pink;
+}
+.author-edit-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
